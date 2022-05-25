@@ -1,1 +1,66 @@
+$theme-colors: (
+    "primary": blanchedalmond, 
+    "secondary": #009999, 
+);
 @import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+body{
+    background-color: #009999;
+}
+.title{
+    font-family: 'Rubik Puddles',cursive;
+    font-size: 1000%;
+    color: blanchedalmond;
+    font-weight: bolder;
+}
+
+.nav-bar{
+    background: rgb(9, 67, 61);
+    color: bisque;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.nav-link{
+    color:#ffebcd;
+}
+
+.modal-home{
+    color: bisque;
+    background: rgb(9, 67, 61);
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: x-large;
+}
+
+.modal-home-button{
+    background: #ffebcd;
+    color: teal;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+.modal-home-header{
+    align-items: center;
+}
+
+.btn:hover {
+    color: blanchedalmond;
+    background-color: rgb(9, 67, 61);
+
+}
+
+.sign-up-form-header{
+    color:#ffebcd;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 30px;
+}
+
+.sign-up-header {
+    color: #ffebcd;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 40px;
+    text-align: center;
+}

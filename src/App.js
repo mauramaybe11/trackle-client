@@ -10,6 +10,12 @@ import SignUp from './components/auth/SignUp'
 import SignIn from './components/auth/SignIn'
 import SignOut from './components/auth/SignOut'
 import ChangePassword from './components/auth/ChangePassword'
+import LogCreate from './components/wordle/create_log'
+import IndexLog from './components/wordle/index'
+import IndexAllLog from './components/wordle/index_all'
+import ShowLog from './components/wordle/show'
+import EditLog from './components/wordle/edit'
+import Home from './components/wordle/home'
 
 class App extends Component {
   constructor (props) {
@@ -57,6 +63,13 @@ class App extends Component {
         ))}
 	      <main className='container'>
 	        <Route
+            exact
+            path='/'
+            render={() => (
+              <Home msgAlert={this.msgAlert} setUser={this.setUser} />
+            )}
+          />
+          <Route
             path='/sign-up'
             render={() => (
               <SignUp msgAlert={this.msgAlert} setUser={this.setUser} />
@@ -85,6 +98,59 @@ class App extends Component {
             render={() => (
               <ChangePassword msgAlert={this.msgAlert} user={user} />
             )}
+          />
+          <AuthenticatedRoute
+            user={user}
+            path='/create-log'
+            render={() => (
+              <LogCreate
+                msgAlert={this.msgAlert}
+                clearUser={this.clearUser}
+                user={user}
+              />
+            )}
+          />
+          <AuthenticatedRoute
+            exact
+            user={user}
+            path='/logs'
+            render={() => (
+              <IndexLog
+                msgAlert={this.msgAlert}
+                clearUser={this.clearUser}
+                user={user}
+              />
+            )}
+          />
+          <AuthenticatedRoute
+            user={user}
+            path='/alllogs'
+            render={() => (
+              <IndexAllLog
+                msgAlert={this.msgAlert}
+                clearUser={this.clearUser}
+                user={user}
+              />
+            )}
+          />
+          <AuthenticatedRoute
+            user={user}
+            path='/logs/:id'
+            render={() =>
+              <ShowLog
+                msgAlert={this.msgAlert}
+                clearUser={this.clearUser}
+                user={user}
+              />}
+          />
+          <AuthenticatedRoute
+            user={user}
+            path='/logs/:id/edit'
+            render={() =>
+              <EditLog
+                msgAlert={this.msgAlert}
+                clearUser={this.clearUser}
+                user={user} />}
           />
         </main>
       </Fragment>
