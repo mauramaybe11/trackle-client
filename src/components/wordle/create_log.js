@@ -67,6 +67,7 @@ const LogCreate = ({ user, msgAlert }) => {
             value={log.guesses}
             onChange={handleChange}
           >
+            <option value="Enter Selection">Choose from Drop Down</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>

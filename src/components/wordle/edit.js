@@ -79,6 +79,7 @@ function EditLog ({ user, match, msgAlert }) {
             value={log.guesses}
             onChange={onChange}
           >
+            <option value="Enter Selection">Choose from Drop Down</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
