@@ -81,7 +81,7 @@ function ShowLog ({ user, match, msgAlert }) {
 
   return (
     <>
-      <div className="show" style={{ justifyContent: 'center', textAlign: 'center' }}>
+      <div className="show-log" style={{ justifyContent: 'center', textAlign: 'center' }}>
         <h1>Your Wordle Log</h1>
         <h2>Word: {log.word}</h2>
         <p>Number of Guesses:{log.guesses}</p>
