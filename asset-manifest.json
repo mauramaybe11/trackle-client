@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/trackle-client/static/css/main.a677c8e9.chunk.css",
-    "main.js": "/trackle-client/static/js/main.21b4070a.chunk.js",
-    "main.js.map": "/trackle-client/static/js/main.21b4070a.chunk.js.map",
+    "main.css": "/trackle-client/static/css/main.b3e539d1.chunk.css",
+    "main.js": "/trackle-client/static/js/main.93cc4c26.chunk.js",
+    "main.js.map": "/trackle-client/static/js/main.93cc4c26.chunk.js.map",
     "runtime-main.js": "/trackle-client/static/js/runtime-main.32725dfe.js",
     "runtime-main.js.map": "/trackle-client/static/js/runtime-main.32725dfe.js.map",
     "static/js/2.c5146405.chunk.js": "/trackle-client/static/js/2.c5146405.chunk.js",
     "static/js/2.c5146405.chunk.js.map": "/trackle-client/static/js/2.c5146405.chunk.js.map",
     "index.html": "/trackle-client/index.html",
-    "static/css/main.a677c8e9.chunk.css.map": "/trackle-client/static/css/main.a677c8e9.chunk.css.map",
+    "static/css/main.b3e539d1.chunk.css.map": "/trackle-client/static/css/main.b3e539d1.chunk.css.map",
     "static/js/2.c5146405.chunk.js.LICENSE.txt": "/trackle-client/static/js/2.c5146405.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.32725dfe.js",
     "static/js/2.c5146405.chunk.js",
-    "static/css/main.a677c8e9.chunk.css",
-    "static/js/main.21b4070a.chunk.js"
+    "static/css/main.b3e539d1.chunk.css",
+    "static/js/main.93cc4c26.chunk.js"
   ]
 }
