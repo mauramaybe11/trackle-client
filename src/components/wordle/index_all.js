@@ -20,8 +20,8 @@ function IndexAllLog ({ user, msgAlert }) {
     })
       .then(() => {
         msgAlert({
-          heading: 'Your Wordles',
-          message: 'Nice Games!',
+          heading: 'Everyone\'s Wordles',
+          message: 'Check those Words out!',
           variant: 'success'
         })
       })
@@ -38,7 +38,7 @@ function IndexAllLog ({ user, msgAlert }) {
   if (logs) {
     logsJSX = logs.map((log) => {
       return (
-        <div key={log.id} style={{ justifyContent: 'center', textAlign: 'center' }} className='index'>
+        <div key={log.id} className='index-all' style={{ justifyContent: 'center', textAlign: 'center' }}>
           <h1>{log.word}</h1>
           <p>Guesses {log.guesses}</p>
           <p>Date Word Guessed {log.date_guessed}</p>

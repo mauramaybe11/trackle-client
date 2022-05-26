@@ -24,10 +24,8 @@ function IndexLog ({ user, msgAlert }) {
       let sum = 0
       res.data.logs.forEach(log => {
         sum += log.guesses
-        console.log(res.data.logs.length)
       })
       const avg = sum / res.data.logs.length
-      console.log(avg)
       setAverage(avg)
     })
       .then(() => {
@@ -48,7 +46,6 @@ function IndexLog ({ user, msgAlert }) {
 
   let logsJSX
   if (logs) {
-    console.log(logs)
     logsJSX = logs.map((log) => {
       return (
         <div key={log.id} style={{ justifyContent: 'center', textAlign: 'center' }} className='index' >

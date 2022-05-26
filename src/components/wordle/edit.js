@@ -39,13 +39,6 @@ function EditLog ({ user, match, msgAlert }) {
       }
     })
       .then(() => setUpdated(true))
-      .then(() => {
-        msgAlert({
-          heading: 'Update Success',
-          message: 'You got it!',
-          variant: 'success'
-        })
-      })
       .catch((error) => {
         msgAlert({
           heading: 'Oops',

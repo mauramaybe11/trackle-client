@@ -131,9 +131,29 @@ div {
 
 .index{
     background-color: teal;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.show {
+    background-color: teal;
+    max-width: 60%;
+    max-height: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
 }
 
 .edit{
+    max-width: 60%;
+    max-height: 60%;
+    background-color: teal;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 30px;
 }
 
@@ -148,6 +168,19 @@ div {
 .slug-log {
     max-width: 40%;
     max-height: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.welcome{
+    color: orangered;
+}
+
+.index-all {
+    max-width: 60%;
+    max-height: 60%;
+    background-color: teal;
     display: block;
     margin-left: auto;
     margin-right: auto;

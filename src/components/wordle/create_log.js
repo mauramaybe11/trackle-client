@@ -16,8 +16,6 @@ const LogCreate = ({ user, msgAlert }) => {
 
   const handleSubmit = event => {
     event.preventDefault()
-    console.log(log)
-    console.log(user)
 
     axios({
       url: `${apiUrl}/logs/`,

@@ -26,7 +26,6 @@ function ShowLog ({ user, match, msgAlert }) {
       // pass that array to map
     })
       .then((res) => {
-        console.log(res.data.log)
         setLog(res.data.log)
       })
       // .then(() => {
@@ -82,7 +81,7 @@ function ShowLog ({ user, match, msgAlert }) {
 
   return (
     <>
-      <div className="index" style={{ justifyContent: 'center', textAlign: 'center' }}>
+      <div className="show" style={{ justifyContent: 'center', textAlign: 'center' }}>
         <h1>Your Wordle Log</h1>
         <h2>Word: {log.word}</h2>
         <p>Number of Guesses:{log.guesses}</p>
