@@ -50,7 +50,8 @@ const LogCreate = ({ user, msgAlert }) => {
 
   return (
     <>
-      <Form onSubmit={handleSubmit}>
+      <img className='slug-log' src="https://i.imgur.com/yZMRobl.png" />
+      <Form className='edit' onSubmit={handleSubmit}>
         <Form.Group>
           <Form.Label>Word</Form.Label>
           <Form.Control
@@ -87,7 +88,7 @@ const LogCreate = ({ user, msgAlert }) => {
             onChange={handleChange}
           />
         </Form.Group>
-
+        <br></br>
         <Button variant="primary" type="submit">Submit</Button>
       </Form>
     </>

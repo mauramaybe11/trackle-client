@@ -52,13 +52,13 @@ function IndexLog ({ user, msgAlert }) {
     logsJSX = logs.map((log) => {
       return (
         <div key={log.id} style={{ justifyContent: 'center', textAlign: 'center' }} className='index' >
-          <h1>{log.word}</h1>
+          <h1>Word: {log.word}</h1>
           <p>Guesses {log.guesses}</p>
           <p>Date Word Guessed {log.date_guessed}</p>
           <p>Log Created:{log.created_at.substring(0, 10)}</p>
           <p>Log Updated:{log.updated_at.substring(0, 10)}</p>
           <Link to={`/logs/${log.id}`}>
-            <Button className='btn btn-primary'>Select Log</Button>
+            <Button className='btn btn-primary'>Select Word</Button>
           </Link>
         </div>
       )
@@ -68,7 +68,7 @@ function IndexLog ({ user, msgAlert }) {
   return (
     <>
       <h3 style={{ textAlign: 'center', fontSize: '80px' }}>Trackle</h3>
-      <h4 style={{ textAlign: 'center' }}>Your Guessing Average: {average.substring(0, 2)}</h4>
+      <h4 style={{ textAlign: 'center' }}>Your Guessing Average: {average}</h4>
       <br></br>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <ul style={{ display: 'flex', flexDirection: 'column-reverse', gap: '50px' }}>

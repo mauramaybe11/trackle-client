@@ -1,6 +1,6 @@
 $theme-colors: (
     "primary": blanchedalmond, 
-    "secondary": #009999, 
+    "secondary": #78a0a0, 
 );
 @import '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
@@ -12,7 +12,7 @@ body{
 }
 .title{
     font-family: 'Rubik Puddles',cursive;
-    font-size: 1000%;
+    font-size: 150px;
     color: blanchedalmond;
     font-weight: bolder;
 }
@@ -41,7 +41,14 @@ body{
     font-weight: 900;
     font-size: xx-large;
 }
-
+.modal-delete {
+    color: bisque;
+    background: rgb(9, 67, 61);
+    font-family: 'Gloria Hallelujah',
+    cursive;
+    font-size: x-large;
+    text-align: center;
+}
 .modal-home-header{
     align-items: center;
 }
@@ -56,6 +63,7 @@ body{
     color:#ffebcd;
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 30px;
+    padding-bottom: 30px;
 }
 
 .sign-up-header {
@@ -81,7 +89,66 @@ body{
 }
 
 .slug {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: cover;
+}
+
+.slug-index {
+    max-width: 25%;
+    max-height: 25%;
+    object-fit: cover;
+}
+
+nav{
+    color:#ffebcd;
+    font-family: 'Gloria Hallelujah',
+    cursive;
+    font-size: 20px;
+}
+
+p {
+    color:#ffebcd;
+    font-family: 'Gloria Hallelujah',
+    cursive;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Gloria Hallelujah',cursive;
+    color:#ffebcd;
+}
+
+h2 {
+    font-family: 'Gloria Hallelujah',
+}
+
+div {
+    font-family: 'Gloria Hallelujah',
+    cursive;
+    color:#ffebcd;
+}
+
+.index{
+    background-color: teal;
+}
+
+.edit{
+    padding-bottom: 30px;
+}
+
+.slug-sign-up{
     max-width: 75%;
     max-height: 75%;
-    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slug-log {
+    max-width: 40%;
+    max-height: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

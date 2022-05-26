@@ -38,7 +38,7 @@ function IndexAllLog ({ user, msgAlert }) {
   if (logs) {
     logsJSX = logs.map((log) => {
       return (
-        <div key={log.id} style={{ justifyContent: 'center', textAlign: 'center' }} className='index' >
+        <div key={log.id} style={{ justifyContent: 'center', textAlign: 'center' }} className='index'>
           <h1>{log.word}</h1>
           <p>Guesses {log.guesses}</p>
           <p>Date Word Guessed {log.date_guessed}</p>
@@ -51,15 +51,18 @@ function IndexAllLog ({ user, msgAlert }) {
   return (
     <>
       <h3 style={{ textAlign: 'center', fontSize: '80px' }}>Trackle</h3>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <ul
-          style={{
-            display: 'flex',
-            flexDirection: 'column-reverse',
-            gap: '50px'
-          }}>
-          {logsJSX}
-        </ul>
+      <div style={{ display: 'flex', justifyContent: 'center', textAlign: 'center' }}>
+        <div>
+          <img className="slug-index" src="https://i.imgur.com/b9Iq9f8.png"/>
+          <ul
+            style={{
+              display: 'flex',
+              flexDirection: 'column-reverse',
+              gap: '50px'
+            }}>
+            {logsJSX}
+          </ul>
+        </div>
       </div>
     </>
   )

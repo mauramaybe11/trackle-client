@@ -16,6 +16,7 @@ import IndexAllLog from './components/wordle/index_all'
 import ShowLog from './components/wordle/show'
 import EditLog from './components/wordle/edit'
 import Home from './components/wordle/home'
+import LoggedIn from './components/wordle/logged_in'
 
 class App extends Component {
   constructor (props) {
@@ -79,6 +80,17 @@ class App extends Component {
             path='/sign-in'
             render={() => (
               <SignIn msgAlert={this.msgAlert} setUser={this.setUser} />
+            )}
+          />
+          <AuthenticatedRoute
+            user={user}
+            path='/hello'
+            render={() => (
+              <LoggedIn
+                msgAlert={this.msgAlert}
+                clearUser={this.clearUser}
+                user={user}
+              />
             )}
           />
           <AuthenticatedRoute

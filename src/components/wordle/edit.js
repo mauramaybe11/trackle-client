@@ -68,7 +68,7 @@ function EditLog ({ user, match, msgAlert }) {
   }
   return (
     <>
-      <Form onSubmit={handleSubmit}>
+      <Form className="edit" onSubmit={handleSubmit}>
         <Form.Group>
           <Form.Label>Word</Form.Label>
           <Form.Control

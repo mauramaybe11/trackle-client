@@ -29,13 +29,13 @@ function ShowLog ({ user, match, msgAlert }) {
         console.log(res.data.log)
         setLog(res.data.log)
       })
-      .then(() => {
-        msgAlert({
-          heading: 'Your Wordle log',
-          message: 'Nice Games!',
-          variant: 'success'
-        })
-      })
+      // .then(() => {
+      //   msgAlert({
+      //     heading: 'Your Wordle log',
+      //     message: 'Nice Games!',
+      //     variant: 'success'
+      //   })
+      // })
       .catch((error) => {
         msgAlert({
           heading: 'Oops',
@@ -82,29 +82,29 @@ function ShowLog ({ user, match, msgAlert }) {
 
   return (
     <>
-      <div style={{ justifyContent: 'center', textAlign: 'center' }}>
+      <div className="index" style={{ justifyContent: 'center', textAlign: 'center' }}>
         <h1>Your Wordle Log</h1>
         <h2>Word: {log.word}</h2>
         <p>Number of Guesses:{log.guesses}</p>
         <p>Date Word Was Guessed:{log.date_guessed}</p>
         <p>Log Created:{log.created_at.substring(0, 10)}</p>
         <p>Log Updated:{log.updated_at.substring(0, 10)}</p>
-        <Button variant='primary' style={{ display: 'flex', justifyContent: '' }} onClick={handleShow}>DeleteLog</Button>
-
+        <Button variant='primary' style={{ marginLeft: '5px' }} onClick={handleShow}>Delete Wordle Log</Button>
+        <br></br>
+        <br></br>
+        <Link to={'/logs/' + match.params.id + '/edit'}>
+          <Button style={{ marginLeft: '5px' }}>Edit Wordle Log</Button>
+        </Link>
         <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Delete Post</Modal.Title>
+          <Modal.Header className="modal-delete" closeButton>
+            <Modal.Title className="modal-delete" >Delete Post</Modal.Title>
           </Modal.Header>
-          <Modal.Body>Are you sure you want to delete?</Modal.Body>
-          <Modal.Footer>
+          <Modal.Body className="modal-delete" >Are you sure you want to delete?</Modal.Body>
+          <Modal.Footer className="modal-delete">
             <Button variant='secondary' onClick={handleClose}>Close</Button>
             <Button variant='primary' onClick={destroy}>Delete</Button>
           </Modal.Footer>
         </Modal>
-
-        <Link to={'/logs/' + match.params.id + '/edit'}>
-          <Button style={{ marginLeft: '5px' }}>Edit log</Button>
-        </Link>
       </div>
     </>
   )

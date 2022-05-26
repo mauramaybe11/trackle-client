@@ -18,7 +18,7 @@ function Home () {
             <Button variant='secondary' onClick={handleClose}>Close</Button>
           </Modal.Footer>
         </Modal>
-        <img className="slug" src="https://i.imgur.com/powFIdW.png"/>
+        <img className="slug" src="https://i.imgur.com/6SsXfBk.png"/>
       </div>
     </>
   )
